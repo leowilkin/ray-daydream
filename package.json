@@ -1,0 +1,63 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "daydream-events",
+  "title": "Daydream Events",
+  "description": "Search through Daydream events to find and open them on HCB",
+  "icon": "icon.png",
+  "author": "leowilkin",
+  "categories": [
+    "Productivity"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "search-events",
+      "title": "Search Daydream Events",
+      "description": "Search for approved Daydream events and open them on HCB",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "type": "password",
+      "name": "airtablePat",
+      "title": "Airtable Personal Access Token",
+      "description": "Your Airtable Personal Access Token",
+      "required": true
+    },
+    {
+      "type": "textfield",
+      "name": "baseId",
+      "title": "Base ID",
+      "description": "The ID of your Airtable base",
+      "required": true
+    },
+    {
+      "type": "textfield",
+      "name": "tableId",
+      "title": "Table ID",
+      "description": "The ID or name of your table (e.g., 'tblXXXXXXXX' or 'Table Name')",
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "airtable": "^0.12.2",
+    "@raycast/api": "^1.102.2",
+    "@raycast/utils": "^2.2.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/node": "18.18.4",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
