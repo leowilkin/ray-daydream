@@ -41,16 +41,16 @@
     }
   ],
   "dependencies": {
-    "airtable": "^0.12.2",
     "@raycast/api": "^1.102.2",
-    "@raycast/utils": "^2.2.0"
+    "@raycast/utils": "^2.2.0",
+    "airtable": "^0.12.2"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.6",
     "@types/node": "18.18.4",
     "@types/react": "18.2.27",
     "eslint": "^8.51.0",
-    "prettier": "^3.0.3",
+    "prettier": "^3.6.2",
     "typescript": "^5.2.2"
   },
   "scripts": {
