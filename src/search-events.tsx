@@ -173,6 +173,11 @@ export default function Command() {
               actions={
                 <ActionPanel>
                   {hcbUrl && <Action.OpenInBrowser title="Open on HCB" url={hcbUrl} icon={Icon.Globe} />}
+                  <Action.OpenInBrowser
+                    title="Open in Admin Dashboard"
+                    url={`https://daydream-portal.hackclub.dev/events/${event.id}`}
+                    icon={Icon.Gear}
+                  />
                   <ActionPanel.Section>
                     <Action
                       title="Refresh Events"
