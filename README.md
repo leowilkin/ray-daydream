@@ -1,6 +1,11 @@
 # Daydream Events
 
-A Raycast extension to search through approved Daydream events in Airtable and quickly open them on HCB (Hack Club Bank).
+A Raycast extension to search through approved Daydream events in Airtable and quickly open them on HCB.
+
+## Quick Start
+1. git clone & npm i
+2. npm run dev
+3. Configure base settings when Raycast pops up (more on that below)
 
 ## Feature
 
